@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        y = 9.81f * Time.deltaTime;
+        move.y = y;
+
         chc.Move(move * Time.deltaTime);
 
     }
